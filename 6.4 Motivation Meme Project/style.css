@@ -1,0 +1,25 @@
+h1 {
+  font-family: 'Nunito', sans-serif;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+body {
+  background-color: black;
+}
+
+.image {
+  border: 5px solid white;
+  width: 100%;
+}
+
+p {
+  color: white;
+  text-align: center;
+}
+
+.poster {
+  width:70%;
+  margin-left: 15%;
+}
