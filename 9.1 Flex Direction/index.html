@@ -13,7 +13,17 @@
     .container {
       color: white;
       border: 5px solid gold;
-      display: flex;
+      /* You can use inline-flex here this takes up the space needed vs. flex uses the whole space */
+      display: inline-flex;
+      flex-direction: column;
+    }
+/* Could have also used 
+    .container > * {
+      flex-basis: 200px
+    } */
+    div > div {
+      flex-basis: 200px;
+      font-size: 2rem;
     }
 
     /*
