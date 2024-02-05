@@ -13,3 +13,7 @@ var randomChosenColor
 
 var gamePattern = [];
 //add the new randomChosenColour to the gamePattern
+
+// use Jquery to select buttons with the same ID
+$("button")
+randomChosenColour
