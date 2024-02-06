@@ -1,0 +1,10 @@
+Run the following:
+
+1. NPM INIT 
+2. Enter package name 
+3. Flow through the questions 
+
+To Install NPM Packages 
+1. npm install <something> 
+2. npm i sillyname (I is the shorthand for install)
+
