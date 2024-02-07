@@ -1,0 +1,57 @@
+NodeJS is not a framework
+Express is a framework
+
+
+CLIENT SIDE and SERVER SIDE 
+
+client side: front end facing side, users interact with
+
+server side: everything on our backend
+
+GOAL: 
+1. Create a dicectory 
+2. Create index.js file
+3. Initalise NPM
+4. Install the Express package
+5. Write server application in index.Js
+6. Start server
+
+
+STEPS:
+1. mkdir "24.1 Express Server" //Note that terminal does not like spaces so I'll need to add " " 
+2. touch index.js //this creates a new file, we want to use touch
+3. run npm init -y //using -y will allow you to skip the steps
+3.1 important that the "main" it showing index.js
+4. run npm install express
+5. inside the package.json add a "type": "module";
+5.1 should look something like:
+{
+  "name": "24.1-express-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
+6. update index.js file with the following:
+6.1 import express from "express";
+const app = express();
+const port = 3000;
+
+app.listen(3000, () => {
+  console.log(`Server running on port ${3000}.`);
+});
+7. in terminal run `node index.js` or the file name and then `server running on port 3000` will populate
+7.1 can use control + c to shut down server 
+8. to learn which ports are listening run: `sudo lsof -i -P -n | grep LISTEN`
+
+
+HTTP Requsts: 
