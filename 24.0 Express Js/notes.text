@@ -54,4 +54,16 @@ app.listen(3000, () => {
 8. to learn which ports are listening run: `sudo lsof -i -P -n | grep LISTEN`
 
 
-HTTP Requsts: 
+HTTP Requsts: Vocabulary 
+
+1. GET - request a resource from the server//you getting something from the server
+2. POST - sending a resource to the server // a piece of information 
+3. PUT - replace a resource that you are sending over
+3.1 PUT - example: would be replacing the entire piece you are sending over
+4. PATCH - patch up a resource 
+4.1 PATCH - example: will only send over the piece to fix the broken piece
+5. DELETE - deletes resources from the server or the database; request from the client to the server
+
+npm i -g nodemon 
+the G stands for GLOBAL
+nodemon index.js 
