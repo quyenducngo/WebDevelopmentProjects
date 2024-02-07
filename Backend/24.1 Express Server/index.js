@@ -13,6 +13,27 @@ app.get("/", (req, res) => {
 app.get("/contact", (req, res) => {
   res.send("Hello, Contact Us");
 });
+app.get("/home", (req, res) => {
+  res.send("<h1>Home Home</h1>");
+});
+
+app.post("/register", (req, res) => {
+  //Do something with the data
+  res.sendStatus(201);
+});
+
+app.put("/user/jimmy", (req, res) => {
+  res.sendStatus(200);
+});
+
+app.patch("/user/jimmy", (req, res) => {
+  res.sendStatus(200);
+});
+
+app.delete("/user/jimmy", (req, res) => {
+  //Deleting
+  res.sendStatus(200);
+});
 app.listen(3000, () => {
   console.log("Server running on port 3000");
 });
