@@ -1,0 +1,32 @@
+index.js file:
+
+app.get("/", (req, res) => {
+  res.render("index.ejs",
+  { name: "Jimmy"});
+});
+
+index.ejs file:
+<body>
+  <h1>
+    Hello <%= name %>
+  </h1>
+</body>
+
+PASSING ARRAYS 
+
+let bowl = ["apples", "pears", "oranges"];
+
+app.get("/", (req, res) => {
+  res.render("index.ejs", { fruits: bowl });
+});
+
+
+index.ejs
+
+<ul>
+  <%fruits.forEach((fruit))=> { %>
+    <li>
+      <%=fruit %>
+    </li>
+  }
+</ul>
