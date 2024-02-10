@@ -1,0 +1,14 @@
+Formatting APIs:
+
+Query Parameters
+https://bored-api.appbrewery.com/random?QUERY=value //example
+
+Multiple Query Parameters
+https://bored-api.appbrewery.com/random?QUERY1=value&QUERY2=value //example and used for filtering and searching
+
+Live Example:
+https://bored-api.appbrewery.com/filter?type=social&participants=8
+
+Path Parameters
+https://bored-api.appbrewery.com/endpoint/{path-parameters} // used for identifying
+https://bored-api.appbrewery.com/activity/5914292 // usecase
