@@ -84,23 +84,23 @@ app.delete("joke/:id", (res, req) => {
 });
 
 //8. DELETE All jokes
-const masterKey = "325345342nndsjkfkjdsjk";
+// const masterKey = "325345342nndsjkfkjdsjk";
 
-app.delete("/all", (req, res) => {
-  const userKey = req.query.key;
-  if (userKey === masterKey) {
-    joke = [];
-    res.sendStatus(200);
-  } else {
-    res
-    .status(404);
-    .json({ error: `You are not authorized to perform this action.`})
-  }
-});
+// app.delete("/all", (req, res) => {
+//   const userKey = req.query.key;
+//   if (userKey === masterKey) {
+//     joke = [];
+//     res.sendStatus(200);
+//   } else {
+//     res
+//     .status(404);
+//     .json({ error: `You are not authorized to perform this action.`})
+//   }
+// });
 
-app.listen(port, () => {
-  console.log(`Successfully started server on port ${port}.`);
-});
+// app.listen(port, () => {
+//   console.log(`Successfully started server on port ${port}.`);
+// });
 
 var jokes = [
   {
