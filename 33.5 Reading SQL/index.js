@@ -19,3 +19,5 @@ db.query("SELECT * FROM capitals", (err, res) => {
 
   db.end();
 });
+alert("hello:");
+//adding some random notes
