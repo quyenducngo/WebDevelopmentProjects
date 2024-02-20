@@ -17,7 +17,7 @@ VALUES ('Angela', 'Yu');
 INSERT INTO contact_detail (id, tel, address)
 VALUES (1, '+123456789', '123 App Brewery Road');
 
--- Join, this is known as an INNER JOIN -- 
+-- Join --
 SELECT * 
 FROM student
 JOIN contact_detail
@@ -30,18 +30,16 @@ CREATE TABLE homework_submission (
   mark INTEGER,
   student_id INTEGER REFERENCES student(id)
 );
--- when `student_id` we're giving the field a name.
 
 -- Data --
 INSERT INTO homework_submission (mark, student_id)
-VALUES (98, 1), (87, 1), (88, 1) (98, 2), (87, 2), (88, 2)
+VALUES (98, 1), (87, 1), (88, 1)
 
 -- Join --
 SELECT *
 FROM student
 JOIN homework_submission
 ON student.id = student_id
--- also: ON student.id = homework_submission.student_id
 
 SELECT student.id, first_name, last_name, mark
 FROM student
@@ -92,7 +90,6 @@ SELECT s.id AS id, first_name, last_name, title
 FROM enrollment e
 JOIN student s ON s.id = e.student_id
 JOIN class c ON c.id = e.class_id;
--- you can forgo the AS but better to keep it around
 
 
 -- EXERCISE SOLUTION AND SETUP --
