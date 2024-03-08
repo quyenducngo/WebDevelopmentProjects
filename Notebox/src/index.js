@@ -134,3 +134,29 @@ ReactDom.render(
   </div>,
   document.getElementById("root")
 );
+
+//INLINE CSS using OBJECTS in JSX
+import React from "react";
+import ReactDom from "react-dom";
+
+ReactDom.render(
+  <h1 style={{ color: "red" }}>My Favourite Foods!</h1>,
+  document.getElementById("root")
+);
+
+//Some more styling - add a custom style as well by calling it customStyle.color = "insert colour";
+import React from "react";
+import ReactDom from "react-dom";
+
+const customStyle = {
+  color: "red",
+  fontSize: "20px",
+  border: "1px solid black",
+};
+
+customStyle.color = "blue";
+
+ReactDom.render(
+  <h1 style={customStyle}>My Favourite Foods!</h1>,
+  document.getElementById("root")
+);
